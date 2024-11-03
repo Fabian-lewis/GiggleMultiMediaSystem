@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.media.MediaView?>
+
+<BorderPane xmlns = "http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MediaController">
+
+<center>
+    <!--This is a media view for displaying the video-->
+    <MediaView fx:id="mediaView"/>
+</center>
+
+<bottom>
+    <HBox alignment = "CENTER" spacing = "10">
+        <Button text = "PLAY" onAction = "#playMedia"/>
+        <Button text = "PAUSE" onAction = "#pauseMedia"/>
+        <Button text = "STOP" onAction = "#stopMedia"/>
+        <Button text = "LOAD" onAction = "#loadMedia"/>
+    </HBox>
+</bottom>
+</BorderPane>
